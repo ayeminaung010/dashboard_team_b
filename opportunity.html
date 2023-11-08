@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+    <div id="container">
+        <div id="group_1">
+            <div class ="concured_ttl">
+                <i class="fa-solid fa-magnifying-glass"></i><span>Concured</span>
+            </div>
+            <div id="list_wrap">
+                <div class="top_list">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i>Overview</a></li>
+                        <li><a href="#" class="active"><i class="fa-solid fa-fire"></i>Opportunities</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i>My competitors</a></li>
+                        <li><a href="#"><i class="fa-solid fa-briefcase"></i>Briefs</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bookmark"></i>Saved</a></li>
+                    </ul>
+                </div>
+                <div class="bottom_list">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-question"></i>Help</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content_wrap">
+            <div class="content_box">
+                <div class="content_1">
+                    <div class="team">
+                        <i class="fa-sharp fa-solid fa-user-secret"></i>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Boro team
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Boro team1</a></li>
+                                <li><a class="dropdown-item" href="#">Boro team2</a></li>
+                                <li><a class="dropdown-item" href="#">Boro team3</a></li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                    <div class="admin">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Zahra hasht
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Zahra hasht</a></li>
+                                <li><a class="dropdown-item" href="#">mgmg</a></li>
+                                <li><a class="dropdown-item" href="#">koko</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="sub_content">
+
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <label for="staticEmail2" class="visually-hidden">User Id</label>
+                        <input type="text" class="form-control" id="staticEmail2" placeholder="User ID">
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputPassword2" class="visually-hidden">User Name</label>
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="User Name">
+                    </div>
+            
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Search</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-info" onclick="">Add</button>
+            
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-danger mb-3">Reset</button>
+                    </div>
+                </form>
+                
+                <table class="table table-striped table-bordered" id="stduentTable" >
+                    <thead>
+                        <tr>
+                            <th scope="col">User ID</th>
+                            <th scope="col">User Name</th>
+                            <th colspan="2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>USR001</td>
+                            <td>Harry</td>
+                            <td>
+                                <button type="button" class="btn btn-success  " onclick="location.href = 'USR002.html';">Update</button>
+                            </td>
+                            <td><button type="submit" class="btn btn-danger mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+                        </tr>
+            
+                        <tr>
+                            <td>USR002</td>
+                            <td>John</td>
+                        <td>
+                            <button type="button" class="btn btn-success  " onclick="location.href = 'USR002.html';">Update</button>
+                        </td>
+                        <td> 
+                            <button type="submit" class="btn btn-danger mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>USR003</td>
+                            <td>Bryce</td>
+                            <td><button type="button" class="btn btn-success" onclick="location.href = 'USR002.html';">Update</button></td>
+                            <td><button type="submit" class="btn btn-danger mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+        
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
