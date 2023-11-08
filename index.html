@@ -18,7 +18,7 @@
             <div id="list_wrap">
                 <div class="top_list">
                     <ul>
-                        <li><a href="#"><i class="fa-solid fa-house"></i>Overview</a></li>
+                        <li><a href="#" class="active"><i class="fa-solid fa-house"></i>Overview</a></li>
                         <li><a href="#"><i class="fa-solid fa-fire"></i>Opportunities</a></li>
                         <li><a href="#"><i class="fa-solid fa-user"></i>My competitors</a></li>
                         <li><a href="#"><i class="fa-solid fa-briefcase"></i>Briefs</a></li>
@@ -36,26 +36,37 @@
         </div>
         <div id="content_wrap">
             <div class="content_box">
+                
                 <div class="content_1">
                     <div class="team">
                         <i class="fa-sharp fa-solid fa-user-secret"></i>
-                        <select>
-                            <option value="">Boro team</option>
-                            <option value="">Boro team1</option>
-                            <option value="">Boro team2</option>
-                        </select>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Boro team
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Boro team1</a></li>
+                                <li><a class="dropdown-item" href="#">Boro team2</a></li>
+                                <li><a class="dropdown-item" href="#">Boro team3</a></li>
+                            </ul>
+                        </div>
                         <i class="fa-solid fa-circle-plus"></i>
                     </div>
                     <div class="admin">
                         <i class="fa-solid fa-circle-user"></i>
-                        <select>
-                            <option value="">Zahra hasht</option>
-                            <option value="">Mg Mg</option>
-                            <option value="">koko</option>
-                        </select>
-                        
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Zahra hasht
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Zahra hasht</a></li>
+                                <li><a class="dropdown-item" href="#">mgmg</a></li>
+                                <li><a class="dropdown-item" href="#">koko</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
                 <div class="content_2">
                     <div class="text">
                         <p>Poroject statistic</p><i class="fa-solid fa-question"></i>

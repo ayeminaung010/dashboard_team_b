@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
    
@@ -39,29 +40,99 @@
                 <div class="content_1">
                     <div class="team">
                         <i class="fa-sharp fa-solid fa-user-secret"></i>
-                        <select>
-                            <option value="">Boro team</option>
-                            <option value="">Boro team1</option>
-                            <option value="">Boro team2</option>
-                        </select>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Boro team
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Boro team1</a></li>
+                                <li><a class="dropdown-item" href="#">Boro team2</a></li>
+                                <li><a class="dropdown-item" href="#">Boro team3</a></li>
+                            </ul>
+                        </div>
                         <i class="fa-solid fa-circle-plus"></i>
                     </div>
                     <div class="admin">
                         <i class="fa-solid fa-circle-user"></i>
-                        <select>
-                            <option value="">Zahra hasht</option>
-                            <option value="">Mg Mg</option>
-                            <option value="">koko</option>
-                        </select>
-                        
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Zahra hasht
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Zahra hasht</a></li>
+                                <li><a class="dropdown-item" href="#">mgmg</a></li>
+                                <li><a class="dropdown-item" href="#">koko</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
+            <div id="sub_content">
+
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <label for="staticEmail2" class="visually-hidden">User Id</label>
+                        <input type="text" class="form-control" id="staticEmail2" placeholder="User ID">
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputPassword2" class="visually-hidden">User Name</label>
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="User Name">
+                    </div>
+            
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Search</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-info" onclick="">Add</button>
+            
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-danger mb-3">Reset</button>
+                    </div>
+                </form>
+                
+                <table class="table table-striped table-bordered" id="stduentTable" >
+                    <thead>
+                        <tr>
+                            <th scope="col">User ID</th>
+                            <th scope="col">User Name</th>
+                            <th colspan="2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>USR001</td>
+                            <td>Harry</td>
+                            <td>
+                                <button type="button" class="btn btn-success  " onclick="location.href = 'USR002.html';">Update</button>
+                            </td>
+                            <td><button type="submit" class="btn btn-danger mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+                        </tr>
+            
+                        <tr>
+                            <td>USR002</td>
+                            <td>John</td>
+                        <td>
+                            <button type="button" class="btn btn-success  " onclick="location.href = 'USR002.html';">Update</button>
+                        </td>
+                        <td> 
+                            <button type="submit" class="btn btn-danger mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>USR003</td>
+                            <td>Bryce</td>
+                            <td><button type="button" class="btn btn-success" onclick="location.href = 'USR002.html';">Update</button></td>
+                            <td><button type="submit" class="btn btn-danger mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
         </div>
     </div>
-
+        
     <script src="js/bootstrap.min.js"></script>
 </body>
 
