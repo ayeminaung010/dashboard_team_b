@@ -7,48 +7,36 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .headerclass{
-            color: #000;
-
-    font-family: Poppins;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-        }
-    </style>
 </head>
 <body>
-    
-        <div class="container">
-               <h1 class="headerclass">Welcome back!</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h6>Enter your Credentials to access your account</h6>
-                        <div class="form-group">
-                            <label for="Email address">Email:</label>
-                            <input type="text" class="form-control" id="Email address" placeholder="Enter your email" name="email"><br>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="Password">Password:</label><a href="#">forgot password</a>
-                            <input type="password" class="form-control" id="Password" placeholder="Name" name="name"></textarea><br>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="checkbox" id="remember" name="Remember" /><label for="remember">Remember for 30 days</label>
-                        </div>
-
-                        <div class="form-group">
-                            <button>Login</button>
-                        </div>
-
-                    <div><img src="signup.png" alt="Italian Trulli"></div>
-
-                    </div>
-                </div>
+    <div id="sign-in" class="d-flex align-items-center">  
+        <form action="" method="" class="row g-3 signin">
+            <h1>Get Started Now</h1>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">I agree to the terms & policy</label>
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn form-btn" type="button">Signup</button>
+            </div>
+        </form>
+        <div class="image">
+            <img src="/signup.png">
+        </div>
+    </div>
+        
         
 </body>
 </html>
