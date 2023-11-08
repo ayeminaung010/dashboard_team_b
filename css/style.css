@@ -1,10 +1,8 @@
-/* Dashboard */
 body {
     font-family: Roboto;
     min-width: 100%;
     width: auto;
     height: auto;
-    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
 	width: 0.1rem;
@@ -15,6 +13,8 @@ body {
 ::-webkit-scrollbar-thumb {
 	background: #F6F6FB;
 }
+
+/* Dashboard -css start */
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@ body {
     position: relative;
 }
 #group_1 {
-    width: 279px;
+    width: 270px;
     height: 100%;
     background-color: #F6F6FB;
     top: 0;
@@ -91,7 +91,7 @@ body {
     width: 100%;
 }
 #list_wrap > div.bottom_list {
-    margin: 180px 0 90px;
+    margin: 50px 0 0;
 }
 #list_wrap div > ul li a {
     display: block;
@@ -103,7 +103,8 @@ body {
     padding: 20px 25px 15px 35px;
     color: #000;
 }
-#list_wrap div > ul li a:hover {
+#list_wrap div > ul li a:hover,
+#list_wrap div > ul li a.active {
     background: linear-gradient(270deg, #E9E8FB 0%, rgba(113, 102, 249, 0.03) 100%);
     color: #7166F9;
     text-decoration: underline;
@@ -128,19 +129,22 @@ body {
 
 /* content_wrap */
 #content_wrap {
-    padding: 20px 40px;
-    width: 1120px;
+    padding: 30px;
+    width: calc(100% - 300px);
     margin: 0 auto;
     float: right;
     clear: both;
-    margin-left: 279px;
+    margin-left: 270px;
     box-sizing: border-box;
 }
 .content_1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 10px;
+    border-bottom: 1px solid #F6F6FB;
+    padding: 0 0 10px;
+    margin: 0 0 45px;
+
 }
 .content_1 .team .fa-user-secret {
     padding: 18px;
@@ -152,7 +156,7 @@ body {
     font-size: 23px;
     color: #E17CFD;
 }
-.content_1 select {
+.content_1 select, .dropdown-toggle {
     border: none;
     color: black;
     font-size: 20px;
@@ -176,12 +180,32 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
+.dropdown {
+    display: inline-block;
+    vertical-align: middle;
+}
+.dropdown-toggle {
+    position: relative;
+}
+.dropdown-toggle::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 8px;
+    top: 9px;
+    z-index: -1;
+    background: #F6F6FB;
+    border-radius: 5px;
+}
+
+
 .content_2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 45px 0 35px;
-    border-top: 1px solid #F6F6FB;
+    padding: 0 0 35px;
+    
 }
 .content_2 div.text {
     width: 326px;
@@ -366,3 +390,22 @@ body {
     padding: 0 0 25px;
     border-bottom: 1px solid #C4C4C4;
 }
+
+/* table - css start  */
+.row {
+    margin: 0 0 20px;
+}
+.form-control {
+    border-color: #7777;
+}
+.table {
+    text-align: center;
+    background: linear-gradient(45deg,#dde6e5,#d6f5e3);
+    --bs-table-bg: transparent;
+    border-color: black;
+}
+.table th {
+    font-size: 1.2rem;
+    background-color: rgba(13, 110, 253, 0.25);
+}
+
