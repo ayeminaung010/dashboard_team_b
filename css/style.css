@@ -273,7 +273,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     text-align: center;
-    word-wrap: break-word
+    word-wrap: break-word;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
@@ -308,7 +308,7 @@ body {
     line-height: 0;
     align-items: center;
     padding: 0 0 25px;
-    border-bottom: 1px solid #var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 .ttl h3 {
     color: black;
@@ -398,26 +398,9 @@ body {
     word-wrap: break-word;
     margin: 0;
     padding: 0 0 25px;
-    border-bottom: 1px solid #var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
-/* table - css start  */
-.row {
-    margin: 0 0 20px;
-}
-.form-control {
-    border-color: #7777;
-}
-.table {
-    text-align: center;
-    background: linear-gradient(45deg,#dde6e5,#d6f5e3);
-    --bs-table-bg: transparent;
-    border-color: black;
-}
-.table th {
-    font-size: 1.2rem;
-    background-color: rgba(13, 110, 253, 0.25);
-}
 
 /* sign-in */
 #sign-in, #login {
@@ -454,3 +437,10 @@ body {
     height: 100%;
 }
 
+
+/* add yasuo css  */
+.bg-gray{
+    background-color: var(--bg-gray-color);
+}
+
+/* table css  */
